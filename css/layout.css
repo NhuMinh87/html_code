@@ -1,0 +1,63 @@
+*{ /* set chung style cho tất cả mọi phần tử */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none; /* bỏ gạch chân của thẻ a */
+}
+
+a:hover{ /* set sẵn màu hover, link */
+    color: red; /* đổi màu chữ khi hover chuột vào */
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #fafafa; /* màu nền của trang web */
+    font-size: 15px; /* kích thước chữ */
+    font-weight: 400; /* độ đậm của chữ */
+    color: #444444; /* màu chữ */
+    line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px*/
+    padding: 20px; /* khoảng cách giữa viền và nội dung của thẻ body */
+    text-align: left; /* canh trái, phải, giữa, đều */
+}
+
+p{
+    margin-bottom: 0,75 rem; /* khoảng cách giữa các đoạn văn */
+    ;
+}
+
+/* layout */
+/* style cho section */
+.section{
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    width: 100%; /* chiều rộng của thẻ section */
+}
+
+.container{ /*tạo 1 hộp nội dung giữa các section */
+    float: none;
+    margin-left: auto; /* canh giữa thẻ container */
+    margin-right: auto; /* canh giữa thẻ container */
+    width: 1200px; /* chiều rộng của thẻ container */
+}
+
+/* ví dụ điều chỉnh các phần */
+.nav{
+    background-color: green;
+}    
+.nav ul li{ /* viết theo gia phả */
+    float: left;
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+    margin-right: 30px; /* khoảng cách giữa các thẻ li */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.nav li a{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav ul li.right{
+    float: right; /* cho thẻ li này về bên phải */
+}
