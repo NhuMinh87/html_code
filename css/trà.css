@@ -1,0 +1,438 @@
+*{ /* set chung style cho tất cả các phần tử */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none; /* bỏ gạch chân của thẻ a */
+}
+
+a:hover{ /* set sẵn màu hover. link */
+    color: #ad7408; /* đổi màu chữ khi hover chuột vào */
+}
+
+header{
+/* Hình nền */
+    background-image: url('/images/Tea/Anh\ nen\ tra\ ngang.PNG'); /* thay bằng link ảnh của bạn */
+    background-size: 1350px 650px;     /* phủ toàn màn hình */
+    background-position: center; /* căn giữa */
+    background-repeat:repeat; /* không lặp */
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    font-weight: 100;
+    float:left;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #fafafa; /* màu nền của trang web */
+    font-size: 15px; /* kích thước chữ */
+    font-weight: 300; /* độ đậm của chữ */
+    color: #444444; /* màu chữ */
+    text-align:left; /* canh trái, phải, giữa */
+    padding: 20px; /* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
+    line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px, tự thêm so với hướng dẫn của thầy*/
+}
+
+.Mobai{
+    text-align: center;
+    color: white;
+}
+
+.Mobai1{
+    font-family:"Alex Brush", sans-serif;
+    font-size: 75px;
+    text-align: center;
+    line-height: 0.5;
+    font-weight: 50;
+
+}
+
+.Mobai2{
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 2.5;
+    text-align: center;   
+    font-weight: 50;
+}
+
+p{
+    margin-bottom: 0.75 rem; /* khoảng cách giữa các đoạn văn */
+}
+
+/* layout */
+/* style cho section */
+.section{
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    width: 100%; /* chiều rộng của thẻ section */
+}
+
+.container{ /*tạo 1 hộp nội dung giữa các section */
+    float: none;
+    margin-left: auto; /* canh giữa thẻ container */
+    margin-right: auto; /* canh giữa thẻ container */
+    width: 1200px; /* chiều rộng của thẻ container */
+}
+
+/* ví dụ điều chỉnh các phần */
+.nav{
+    background-color: transparent; /*màu nền của thanh menu */
+} 
+
+.nav ul li{ /* viết theo gia phả */
+    float: left;
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+    margin-right: 30px; /* khoảng cách giữa các thẻ li */
+    padding-top: 15px;
+    padding-bottom: 15px;
+} 
+
+.nav li a{
+    color: #FFFFFF;
+    font-family: sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.nav ul li.right{
+    float: right; /* cho thẻ li này về bên phải */
+}
+
+.nav ul li.left{
+    float: left; /* cho thẻ li này về bên phải */
+}
+
+.form-group{
+    float: left;
+    width: 20%;
+    margin-bottom: 15px;
+}
+.form-group input{
+    float: left;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+.form-group input[type="email"]{
+    color: green;
+    border: none;
+}
+.form-group input[name="full_name"]{
+    color:burlywood
+}   
+
+div{
+    /* width: 280px; /*chiều rộng của thẻ div */
+    /* width: 19%; /* chiếm 20% chiều rộng của thẻ cha */
+    width: 100%; /* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    border: none; /*border-bottom. border-top, border-left, border-right */
+    margin: 0px; /*khoảng cách giữa các thẻ div */
+    padding: 15px; /*khoảng cách giữa viền và nội dung */
+    /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
+    /* margin: top right bottom left */
+    /* padding: top right bottom left; */
+    /* margin-top:... margin-right... */
+    /* padding-top... padding-right... */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    border-radius: 0px; /*bo tròn góc*/
+    background-color: none;
+    text-align:justify; /* căn chữ đều 2 bên justify, left, right, center*/
+}
+
+.D11{
+    width: 30%;
+    margin-right: 50px;
+}
+
+.D12{
+    width: 60%;
+}
+
+.D21{
+    width: 33%;
+}
+    
+.D22{
+    width: 33%;
+}
+
+.D23{
+    width: 33%;
+}
+
+.D31{
+    width: 22%;
+    margin: 15px;
+}
+
+.D32{
+    width: 22%;
+    margin: 15px;
+}
+
+.D33{
+    width: 22%;
+    margin: 15px;
+}
+
+.D34{
+    width: 22%;
+    margin: 15px;
+}
+
+.D41{
+    font-family:"Cormorant Garamond", sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.D42{
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+}
+
+.D43{
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+}
+
+.D44{
+    text-align: center;
+    width: 31%;
+    margin: 10px;
+    padding: 15px;
+}
+
+.D5{
+    text-align: center;
+}
+
+.D51{
+    width: 22%;
+    margin: 15px;
+}
+
+.D52{
+    width: 22%;
+    margin: 15px;
+}
+
+.D53{
+    width: 22%;
+    margin: 15px;
+}
+
+.D54{
+    width: 22%;
+    margin: 15px;
+}
+
+.D55{
+    width: 22%;
+    margin: 15px;
+}
+
+.D56{
+    width: 22%;
+    margin: 15px;
+}
+
+.D57{
+    width: 22%;
+    margin: 15px;
+}
+
+.D58{
+    width: 22%;
+    margin: 15px;
+}
+
+.D61{
+    width: 25%;
+    margin: 50px;
+    padding: 25px;
+}
+
+.D62{
+    width: 25%;
+    margin: 50px;
+    padding: 25px;
+}
+
+.D63{
+    width: 25%;
+    margin: 50px;
+    padding: 25px;
+}
+
+.D71{
+    width: 48%;
+    font-size: 18px;
+    margin-left: none;
+}
+
+.D72{
+    width: 48%; 
+}
+
+.D8{
+    text-align: center;
+}
+
+.D81{
+    text-align: center;
+  
+}
+
+.D82{
+    text-align: center;
+    width:33%;
+    padding: 10px;
+    margin: 1px;
+}
+
+.D83{
+    text-align: center;
+    width:33%;
+    padding: 10px;
+    margin: 1px;
+}
+
+.D84{
+    text-align: center;
+    width:33%;
+    padding: 10px;
+    margin: 1px;
+}
+
+.D91{
+    width: 49%;
+}
+
+.D92{
+    width: 49%;
+}
+
+.D101{
+    text-align: center;
+}
+
+.D102{
+    width: 31%;
+    margin: 10x;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.D103{
+    width: 31%;
+    margin: 10px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.D104{
+    width: 31%;
+    margin: 10px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer{
+    background-color:#254d3a ;
+    color:#fafafa;
+    font-size: 13px;
+    height: 400px;
+    line-height: 3.0;
+}
+.footer ul li{
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+}
+.F1{
+    width: 15%;   
+}
+
+.F2{
+    width: 35%;
+    text-align: center;
+}
+
+.F3{
+    width: 35%;
+    text-align: left;
+}
+
+.F4{
+    text-align: center;
+    border-top: 1px solid #fafafa;
+}
+
+button{
+    color: #fafafa;
+    width: 130px;
+    height: 60px;
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.slider{
+    width: 100%;
+    position: relative;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.slides{
+    display:flex;
+    width: 400%; /* 5 ảnh => 500% */
+    animation: slide 20s infinite;
+}
+
+.slide{
+    width: 25%; /* 100% / 4 ảnh */
+    flex-shrink: 0;
+}
+
+.slide img{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display:block;
+}
+
+/* animation chạy liên tục */
+@keyframes slide {
+      0%   { transform: translateX(0%); }
+      15%  { transform: translateX(0%); }
+
+      20%  { transform: translateX(-25%); }
+      35%  { transform: translateX(-25%); }
+
+      40%  { transform: translateX(-50%); }
+      55%  { transform: translateX(-50%); }
+
+      60%  { transform: translateX(-75%); }
+      75%  { transform: translateX(-75%); }
+
+      100% { transform: translateX(0%); }
+}
+
+
+
+
+ 

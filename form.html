@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form demo</title>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+    <section class="section form-demo">
+        <div class="container">
+            <form action="#" method="get"> 
+                <div class="form-group"> 
+                    <label>Fullname</label>
+                    <input type="text" name="full_name" placeholder="Enter your name" required/>
+                </div>
+
+                <div class="form-group"> 
+                    <label>Email</label>
+                    <input type="email" name="my_email" placeholder="Enter your email" required/>
+                </div>
+                
+                <div class="form-group"> 
+                    <label>Password</label>
+                    <input type="password" name="my_password" placeholder="Enter your password" required/>
+                </div>
+
+                <div class="form-group"> 
+                    <label>Time</label>
+                    <input type="time" name="my_time" placeholder="Enter your time"/>
+                </div>
+
+                <div class="form-group"> 
+                    <label>Favourite color</label>
+                    <input type="color" name="my_color" placeholder="Enter your color"/>
+                </div>
+
+                <div class="form-group"> 
+                    <label>Telephone</label>
+                    <input type="tel" name="my_telephone" placeholder="Enter your telephone"/>
+                </div>
+
+                <div class="form-group"> 
+                    <label>DOB</label>
+                    <input type="date" name="dob" placeholder="Enter your date of birth"/>
+                </div>
+
+                <div class="form-group"> 
+                    <label>Age</label>
+                    <input type="number" name="my_age" placeholder="Enter your age"/>
+                </div>
+
+                <div class="form-group"> 
+                    <label>Country</label>
+                    <select name="country">
+                        <option value="vn">Viet Nam</option>
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="fr">France</option>
+                        <option value="de">Germany</option>
+                    </select>
+                </div>
+
+                <div class="form-group"> 
+                    <label>Gender</label>
+                    <label><input type="radio" name="sex" value="male"/> Male</label>
+                    <label><input type="radio" name="sex" value="female"/> Femal</label>
+                    <label><input type="radio" name="sex" value="other"/> Other</label>
+                </div>
+
+                <div class="form-group"> 
+                    <label>
+                        <input type="checkbox" name="conditions"/>
+                        I'm ready!
+                    </label>
+                </div>
+
+                <div class="form-group"> 
+                    <label>Profile</label>
+                    <textarea name="profile" placeholder="Enter your profile"></textarea>
+                </div>
+
+                <div class="form-group"> 
+                    <button onclick="return confirm ('Submit data?')" type="submit">Sent data</button>
+                    <button onclick="return confirm ('Are you sure?')" type="reset">Reset data</button>
+                    <button type="button">Button</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Auto Slider</title>
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { display:flex; justify-content:center; align-items:center; height:100vh; background:#111; }
+
+    .slider {
+      width: 50%;
+      max-width: 500px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .slides {
+      display:flex;
+      width: 400%; /* 5 ảnh => 500% */
+      animation: slide 20s infinite;
+    }
+
+    .slide {
+      width: 25%; /* 100% / 5 ảnh */
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display:block;
+    }
+
+    /* animation chạy liên tục */
+    @keyframes slide {
+      0%   { transform: translateX(0%); }
+      15%  { transform: translateX(0%); }
+
+      20%  { transform: translateX(-20%); }
+      35%  { transform: translateX(-20%); }
+
+      40%  { transform: translateX(-40%); }
+      55%  { transform: translateX(-40%); }
+
+      60%  { transform: translateX(-60%); }
+      75%  { transform: translateX(-60%); }
+
+      80%  { transform: translateX(-80%); }
+      95%  { transform: translateX(-80%); }
+
+      100% { transform: translateX(0%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide"><img src="/images/slide11.JPG" alt="Ảnh 1"></div>
+      <div class="slide"><img src="/images/slide12.JPG" alt="Ảnh 2"></div>
+      <div class="slide"><img src="images/slide13.JPG" alt="Ảnh 3"></div>
+      <div class="slide"><img src="images/slide14.JPG" alt="Ảnh 4"></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<div class="D12">
+                <div class="container">
+            <p>
+                <figure>     
+                    <img src="images/Trà 1.png" width="800"/>
+                </figure>
+            </p>
+            </div>
+        </div>   
+
+        /* style cho phần D21 D22 D23 */
+        font-family: Inter SemiBold, background-color:#DCE6D7, border: none;"
+
+.D21{
+    width: 33%;
+    background-color: #E9F0E9;
+    padding: 20px 40px 20px 10px;
+}
+
+.D23{
+    width: 33%;
+    background-color:#14422d;
+    color:antiquewhite;
+    padding: 20px 10px 20px 40px;
+}
+Kiểu chữ (Font) trong ảnh
+
+Phần tiêu đề “The Story Behind Our Ocha House”
+→ Font serif (chữ có chân, dáng thanh lịch, hơi cổ điển). Thường các theme WordPress như Ocha House dùng "Cormorant Garamond" hoặc Playfair Display".
+
+Phần đoạn văn mô tả (We also specialize in bubble tea…)
+→ Font sans-serif (chữ không chân, hiện đại, dễ đọc). Thường là "Inter", "Poppins" hoặc "Lato".
+
+Phần nút “LEARN MORE”
+→ Cũng dùng sans-serif, đồng bộ với đoạn văn.
+
+Tên các loại trà (Chai Teas, Single Estate, Japanese Matcha)
+→ Sans-serif, đậm hơn, thường dùng “Inter SemiBold” hoặc “Poppins Medium”.
+
+2. Màu background
+
+Nút “LEARN MORE”
+→ Màu xanh nhạt (#DCE6D7) (gần giống màu pastel green).
+
+Phần Eco Package (mục bên dưới có hình gói trà Oolong, nền xanh nhạt ở bên trái)
+→ Màu xanh nhạt hơn, gần #E9F0E9.
+
+Phần Wholesale / Loyal-Tea Rewards (ô nền xanh đậm ở bên phải)
+→ Màu xanh đậm #234233 (xanh lá rêu đậm).
+
+ <li class="right"><a href="#">MY ADRESS</a></li>
+
+
+                
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochahouse-organic-tea-store-woocommerce-wordpress-theme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/trà.css"/>
+</head>
+<body>
+  <section class="section D11">
+                <div class="container">
+                <div class="D111">
+                    <figure>
+                        <img src="/images/Tea/D81.png" width="100">
+                        <h1 style="font-family: Cormorant Garamond;font-size: 35px; text-align: center;">Blog & News</h1>
+                            <p>Integer quis tempor orci. Suspendisse potenti. Interdum et malesuada fames ac</p>
+                                <p>ante ipsum primis in faucibus.</p>
+                    </figure>
+                </div>
+
+                <div class="D112">
+                    <figure>
+                        <img src="/images/Tea/D112.png" width="350">
+                        <h3 style="font-family: Cormorant Garamond;font-size: 20x;">Five Reasons to Drink Green Tea</h3>
+                            <h3 style="font-family: Cormorant Garamond;font-size: 20px;">Daily</h3>
+                            <p>In the spirit of all things green today, we wanted to break</p>
+                                <p>down some of the health benefits of one of the most</p>
+                                    <p>classic teas, GREEN tea (and matcha of course)!</p>
+                    </figure>
+                </div>
+    <div class="D113">
+                    <figure>
+                        <img src="/images/Tea/D113.png" width="350">
+                        <h3 style="font-family: Cormorant Garamond;font-size: 20x;">3 Reasons We Are Obsessed with</h3>
+                            <h3 style="font-family: Cormorant Garamond;font-size: 20px;">Yerba Mate Tea</h3>
+                            <p>In the spirit of all things green today, we wanted to break</p>
+                                <p>down some of the health benefits of one of the most</p>
+                                    <p>classic teas, GREEN tea (and matcha of course)!</p>
+                    </figure>
+                </div>
+
+                  <div class="D114">
+                    <figure>
+                        <img src="/images/Tea/D114.png" width="350">
+                        <h3 style="font-family: Cormorant Garamond;font-size: 20x;">How Tea Can Help You Stay</h3>
+                            <h3 style="font-family: Cormorant Garamond;font-size: 20px;">Motivated This Winter</h3>
+                            <p>Time is really flying by fast as the winter season is now just</p>
+                                <p>a few weeks away. And certainly, almost everyone is</p>
+                                    <p>excited about the upcoming holiday.</p>
+                    </figure>
+                </div>
+            </div>
+        </section>
+</body>

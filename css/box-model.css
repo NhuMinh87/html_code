@@ -1,9 +1,9 @@
 div{
     /* width: 280px; /*chiều rộng của thẻ div */
     /* width: 19%; /* chiếm 20% chiều rộng của thẻ cha */
-    width: calc(25% - 20px); /* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
+    width: calc(25% - 20px); /* tính toán chiều rộng: 25% thẻ cha- 20px của margin (left right)*/
     float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
-    border: none; /*border-bottom. border-top, border-left, border-right */
+    border: 1px solid #86b19d; /*border-bottom. border-top, border-left, border-right */
     margin: 10px; /*khoảng cách giữa các thẻ div */
     padding: 15px; /*khoảng cách giữa viền và nội dung */
     /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
@@ -11,67 +11,23 @@ div{
     /* padding: top right bottom left; */
     /* margin-top:... margin-right... */
     /* padding-top... padding-right... */
-    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ, viền border mỗi bên 1px + padding mỗi bên 15px */
     border-radius: 10px; /*bo tròn góc*/
-    background-color: white(59, 174, 174);
+    background-color: #abdfc7; /* màu nền */
 }
 
-/* tạm dừng div:hover{ /*hiệu ứng khi hover chuột vào*/
-    background-color: brown; /*thay đổi màu nền khi hover*/
-    /* transform: scale(1.1); /*phóng to thẻ khi hover lên 10%*/
-    /* transform: translate (0, -10px); /*dịch chuyển thẻ khi hover lên trên 10px*/
-    transform: rotate(10deg); /*xoay thẻ khi hover góc 5 độ*/
+div:hover{ /*hiệu ứng khi hover chuột vào thẻ, giúp người dùng dễ nhận diện phần tử khi sử dụng */
+    background-color: #86b19d; /*thay đổi màu nền khi hover*/
+    /* transform: scale(1.5); /*phóng to thẻ khi hover lên 10%*/
+    transform: translate(0,-10px); /*dịch chuyển thẻ khi hover hướng lên trên 10px*/
+    /* transform: rotate(10deg); /*xoay thẻ khi hover góc 5 độ*/
     transition: all 0.5s ease-in; /*hiệu ứng chuyển đổi mượt mà trong 3s*/
 }
 
 img{
-   max-width:100%; /*ảnh không vượt quá kích thước thẻ cha*/
+   max-width:100%; /* cỡ hình ảnh về kích thước của thẻ cha nếu nó vượt quá*/
 }
+
 .special{
-    background-color: green
-    ;
+    background-color:  #ddc5d2;
 } 
-
-.D1{
-    background-color: grey;
-    /* width: 280px; /*chiều rộng của thẻ div */
-    /* width: 19%; /* chiếm 20% chiều rộng của thẻ cha */
-    width: calc(35% - 20px); /* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
-    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
-    border: 1px solid black; /*border-bottom. border-top, border-left, border-right */
-    margin: 0px; /*khoảng cách giữa các thẻ div */
-    padding: 15px; /*khoảng cách giữa viền và nội dung */
-    /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
-    /* margin: top right bottom left */
-    /* padding: top right bottom left; */
-    /* margin-top:... margin-right... */
-    /* padding-top... padding-right... */
-    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
-    border-radius: 0px; /*bo tròn góc*/
-    text-align:justify; /* canh đều 2 bên justify, left, right, center*/
-    line-height: 1.565; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px*/
-}
-
-.D2{
-    background-color: white;
-    /* width: 280px; /*chiều rộng của thẻ div */
-    /* width: 19%; /* chiếm 20% chiều rộng của thẻ cha */
-    width: calc(65% - 20px); /* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
-    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
-    border-bottom: 1px solid black; /*border-bottom. border-top, border-left, border-right */
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    margin: 0px; /*khoảng cách giữa các thẻ div */
-    padding: 15px; /*khoảng cách giữa viền và nội dung */
-    /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
-    /* margin: top right bottom left */
-    /* padding: top right bottom left; */
-    /* margin-top:... margin-right... */
-    /* padding-top... padding-right... */
-    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
-    border-radius: 0px; /*bo tròn góc*/
-    text-align:justify; /* canh đều 2 bên justify, left, right, center*/
-    line-height: 1.0; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px*/
-}
-
-       

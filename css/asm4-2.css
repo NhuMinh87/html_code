@@ -1,0 +1,73 @@
+*{ /*set chung style cho tất cả mọi phần tử */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    margin: 0; /* bỏ khoảng cách mặc định của trình duyệt */
+    padding: 0; /* bỏ khoảng cách mặc định của trình duyệt */
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(236, 242, 236); /* màu nền của trang web */
+    font-size: 15px; /* kích thước chữ */
+    font-weight: 400; /* độ đậm của chữ */
+    color: #444444; /* màu chữ */
+    line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px*/
+    padding: 20px; /* khoảng cách giữa viền và nội dung của thẻ body */
+    text-align: center; /* canh trái, phải, giữa, đều */
+}
+
+div{
+    /* width: 280px; /*chiều rộng của thẻ div */
+    /* width: 19%; /* chiếm 20% chiều rộng của thẻ cha */
+    width: 80%;/* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    border: 1px solid black; /*border-bottom. border-top, border-left, border-right */
+    margin: 0px; /*khoảng cách giữa các thẻ div */
+    padding: 15px; /*khoảng cách giữa viền và nội dung */
+    /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
+    /* margin: top right bottom left */
+    /* padding: top right bottom left; */
+    /* margin-top:... margin-right... */
+    /* padding-top... padding-right... */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    border-radius: 0px; /*bo tròn góc*/
+    background-color: none;
+}
+
+.D1{
+    width: 49%;
+    margin: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+    background-color: rgb(18, 71, 146);
+    color:#fafafa
+}
+
+.D2{
+    width: 23%;
+    margin: 5px;
+    font-size: 15px;
+    line-height: 1.0;
+    background-color: pink;
+}
+
+h1{
+    font-size: 20px; /* kích thước chữ */
+    font-weight: 100; /* độ đậm của chữ */
+    margin-bottom: 10px; /* khoảng cách bên dưới của thẻ h1 */
+}
+
+h2{
+    font-size: 35px; /* kích thước chữ */
+    font-weight: 600; /* độ đậm của chữ */
+    margin-bottom: 10px; /* khoảng cách bên dưới của thẻ h2 */
+    color:rgb(30, 30, 190);
+}
+
+h3{
+    margin-bottom: 10px; /* khoảng cách bên dưới của thẻ h3 */  
+}
+
+h4{
+    margin-top: 15px; /* khoảng cách bên trên của thẻ h3 */ 
+    margin-bottom: 12px; /* khoảng cách bên dưới của thẻ h4 */
+}

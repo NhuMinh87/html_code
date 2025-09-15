@@ -1,0 +1,34 @@
+div{
+    /* width: 280px; /*chiều rộng của thẻ div */
+    /* width: 19%; /* chiếm 20% chiều rộng của thẻ cha */
+    width: none; /* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    border: none; /*border-bottom. border-top, border-left, border-right */
+    margin: 0px; /*khoảng cách giữa các thẻ div */
+    padding: 15px; /*khoảng cách giữa viền và nội dung */
+    /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
+    /* margin: top right bottom left */
+    /* padding: top right bottom left; */
+    /* margin-top:... margin-right... */
+    /* padding-top... padding-right... */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    border-radius: 0px; /*bo tròn góc*/
+    background-color: none;
+    text-align:justify; /* căn chữ đều 2 bên justify, left, right, center*/
+}
+
+.D1{
+    width: calc(35% - 20px); /* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
+    border: 1px solid black; /*border-bottom. border-top, border-left, border-right */
+    line-height: 1.6; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px*/
+    background-color:grey;
+}
+
+.D2{
+    width: calc(65% - 20px); /* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
+    border-bottom: 1px solid black; /*border-bottom. border-top, border-left, border-right */
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    line-height: 1.15558; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px*/
+    background-color: white;
+}
