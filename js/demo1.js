@@ -66,13 +66,29 @@ age = parseInt(age);
 // "20ab48"==> 20
 // "a20" ==> NaN: not a number
 
-var lk = Math.random(); //tạo 1 số thực ngẫu nhiên từ 0->1
-lk = lk*100;
-lk = parseInt(lk);
+//var lk = Math.random(); //tạo 1 số thực ngẫu nhiên từ 0->1
+//lk = lk*100;
+//lk = parseInt(lk);
 // console.log(lk); báo trước kết quả
-var num = prompt("Bạn chọn số nào");
-if(num == lk){
-    alert("Chúc mừng bạn đã trúng số");
-}else{
-    alert("Chúc bạn may mắn lần sau");
-}
+//var num = prompt("Bạn chọn số nào");
+//if(num == lk){
+//    alert("Chúc mừng bạn đã trúng số");
+//}else{
+//    alert("Chúc bạn may mắn lần sau");
+//}
+
+//hàm delay, dùng để trì hoãn
+//setTimeout(function(){
+//    alert("ABCDE");
+//    alert("123");
+//}, 3000); // 3000 ms
+
+//hàm lặp lại vĩnh viễn, vòng lặp vô hạ
+var c = 10;
+var bom = setInterval(function(){
+        alert(c);
+        c--;
+        if(c<=0){
+            clearInterval(bom)
+        }
+}, 1000); //1000 ms

@@ -1,0 +1,137 @@
+*{ /* set chung style cho tất cả các phần tử */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none; /* bỏ gạch chân của thẻ a */
+}
+
+a:hover{ /* set sẵn màu hover. link */
+    color: #ad7408; /* đổi màu chữ khi hover chuột vào */
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #fafafa; /* màu nền của trang web */
+    font-size: 15px; /* kích thước chữ */
+    font-weight: 400; /* độ đậm của chữ */
+    color: #444444; /* màu chữ */
+    text-align:left; /* canh trái, phải, giữa */
+    padding: 20px; /* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
+    line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px, tự thêm so với hướng dẫn của thầy*/
+}
+
+p{
+    margin-bottom: 0.75 rem; /* khoảng cách giữa các đoạn văn */
+}
+
+/* layout */
+/* style cho section */
+.section{
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    width: 100%; /* chiều rộng của thẻ section */
+}
+
+.container{ /*tạo 1 hộp nội dung giữa các section */
+    float: none;
+    margin-left: auto; /* canh giữa thẻ container */
+    margin-right: auto; /* canh giữa thẻ container */
+    width: 1200px; /* chiều rộng của thẻ container */
+}
+
+.nav{
+    background-color: #444444; /*màu nền của thanh menu */
+}
+
+.nav ul li{ /* viết theo gia phả */
+    float: left;
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+    margin-right: 30px; /* khoảng cách giữa các thẻ li */
+    padding-top: 15px;
+    padding-bottom: 15px;
+} 
+
+.nav li a{
+    color: #FFFFFF;
+    font-family: sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+
+
+div{
+    /* width: 280px; /*chiều rộng của thẻ div */
+    /* width: 19%; /* chiếm 20% chiều rộng của thẻ cha */
+    width: calc(25% - 20px); /* tính toán chiều rộng: 25% thẻ cha- 20px của margin (left right)*/
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    border: none; /*border-bottom. border-top, border-left, border-right */
+    margin: 10px; /*khoảng cách giữa các thẻ div */
+    padding: 15px; /*khoảng cách giữa viền và nội dung */
+    /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
+    /* margin: top right bottom left */
+    /* padding: top right bottom left; */
+    /* margin-top:... margin-right... */
+    /* padding-top... padding-right... */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ, viền border mỗi bên 1px + padding mỗi bên 15px */
+    border-radius: 10px; /*bo tròn góc*/
+    background-color: none; /* màu nền */
+}
+
+.form-group{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group input{
+    float: left;
+    width: 50%;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.form-group input[type="email"]{
+    color: green;
+}
+
+.form-group input[name="full_name"]{
+    color: burlywood;
+}
+
+label{
+    font-size: 20px;
+    float:left;
+    text-align: justify;
+}
+
+
+/* Video nền chiếm toàn màn hình */
+.video-background {
+    position: fixed; /* giữ video cố định khi scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* để video nằm sau nội dung */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* video sẽ phủ kín toàn bộ vùng */
+}
+
+/* Nội dung hiển thị trên video */
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}

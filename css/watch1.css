@@ -1,0 +1,79 @@
+     /* Thanh menu chính */
+    nav {
+     background-color: #000;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    .menu > li {
+      position: relative;
+      margin: 0 20px;
+    }
+
+    .menu > li > a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    /* Mega menu (ẩn mặc định) */
+    .mega-menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 800px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      color: #333;
+      z-index: 100;
+    }
+
+    /* Khi hover vào SHOP thì hiện mega menu */
+    .menu > li:hover .mega-menu {
+      display: flex;
+    }
+
+    .mega-column {
+      flex: 1;
+      margin: 0 15px;
+    }
+
+    .mega-column h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #b08d57; /* màu vàng nhạt */
+      text-transform: uppercase;
+    }
+
+    .mega-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mega-column ul li {
+      margin-bottom: 8px;
+    }
+
+    .mega-column ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    /* Cột có hình ảnh */
+    .mega-column img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+    }
+  
