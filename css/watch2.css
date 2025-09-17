@@ -85,3 +85,17 @@ nav{
       max-width: 100%;
       border: 1px solid #ccc;
 }
+
+.container {
+  display: flex;
+  justify-content: center; /* căn giữa ngang */
+  align-items: center;     /* căn giữa dọc */
+  height: 200px;
+  border: 1px solid black;
+}
+
+.item {
+  background: lightblue;
+  padding: 20px;
+  margin: 10px;
+}

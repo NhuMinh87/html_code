@@ -9,4 +9,16 @@ hx.classList.add("abc");
 hx.classList.add("gik");
 
 var dv=document.getElementById("devide");
-dv.style.fontsize = "50px";
+//var f = 14;
+//var d = setInterval(function(){
+//    dv.style.fontSize = f + "px";
+//    f+= 2;
+//},1000);
+
+var hx= document.getElementById("fan");
+var dg = 0;
+var fanbox = setInterval(function(){
+        fan.style.transform = `rotate(${dg}deg)`;
+            dg+=2;
+}, 1); //1000 ms
+
