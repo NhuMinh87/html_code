@@ -17,14 +17,13 @@ header{
     background-image: url('/images/Tea/Anh\ nen\ tra\ ngang.PNG'); /* thay bằng link ảnh của bạn */
     background-size: 1350px 650px;     /* phủ toàn màn hình */
     background-position: center; /* căn giữa */
-    background-repeat:repeat; /* không lặp */
+    background-repeat: repeat; /* không lặp */
     justify-content: center;
     align-items: center;
     height: 620px;
     font-weight: 100;
-    float:left;
+    float: left;
 }
-
 
 body{
     font-family: "Roboto", sans-serif;
@@ -74,7 +73,7 @@ p{
     float: none;
     margin-left: auto; /* canh giữa thẻ container */
     margin-right: auto; /* canh giữa thẻ container */
-    width: 1200px; /* chiều rộng của thẻ container */
+    width: 1360px; /* chiều rộng của thẻ container */
 }
 
 /* ví dụ điều chỉnh các phần */

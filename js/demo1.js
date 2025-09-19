@@ -83,7 +83,7 @@ age = parseInt(age);
 //    alert("123");
 //}, 3000); // 3000 ms
 
-//hàm lặp lại vĩnh viễn, vòng lặp vô hạ
+//hàm lặp lại vĩnh viễn, vòng lặp vô hạn
 var c = 10;
 var bom = setInterval(function(){
         alert(c);

@@ -1,0 +1,153 @@
+*{ /* set chung style cho tất cả các phần tử */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none; /* bỏ gạch chân của thẻ a */
+}
+
+a:hover{ /* set sẵn màu hover. link */
+    color: #ad7408; /* đổi màu chữ khi hover chuột vào */
+}
+
+header{
+/* Hình nền */
+    background-image: url('/images/Tea/Anh\ nen\ tra\ ngang.PNG'); /* thay bằng link ảnh của bạn */
+    background-size: 1350px 650px;     /* phủ toàn màn hình */
+    background-position: center; /* căn giữa */
+    background-repeat:repeat; /* không lặp */
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    font-weight: 100;
+    float:left;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #fafafa; /* màu nền của trang web */
+    font-size: 15px; /* kích thước chữ */
+    font-weight: 400; /* độ đậm của chữ */
+    color: #444444; /* màu chữ */
+    text-align:left; /* canh trái, phải, giữa */
+    padding: 20px; /* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
+    line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px, tự thêm so với hướng dẫn của thầy*/
+}
+
+p{
+    margin-bottom: 0.75 rem; /* khoảng cách giữa các đoạn văn */
+}
+
+/* layout */
+/* style cho section */
+.section{
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    width: 100%; /* chiều rộng của thẻ section */
+}
+
+.container{ /*tạo 1 hộp nội dung giữa các section */
+    float: none;
+    margin-left: auto; /* canh giữa thẻ container */
+    margin-right: auto; /* canh giữa thẻ container */
+    width: 1360px; /* chiều rộng của thẻ container */
+}
+
+div{
+    /* width: 280px; /*chiều rộng của thẻ div */
+    /* width: 19%; /* chiếm 20% chiều rộng của thẻ cha */
+    width: 100%; /* tính toán chiều rộng: 25% thẻ cha- 20px của margin (left right)*/
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    border: none; /*border-bottom. border-top, border-left, border-right */
+    margin: 0px; /*khoảng cách giữa các thẻ div */
+    padding: 15px; /*khoảng cách giữa viền và nội dung */
+    /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
+    /* margin: top right bottom left */
+    /* padding: top right bottom left; */
+    /* margin-top:... margin-right... */
+    /* padding-top... padding-right... */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ, viền border mỗi bên 1px + padding mỗi bên 15px */
+    border-radius: 0px; /*bo tròn góc*/
+    background-color: none; /* màu nền */
+    text-align:justify; /* căn chữ đều 2 bên justify, left, right, center*/
+}
+
+/* div:hover{ /*hiệu ứng khi hover chuột vào thẻ, giúp người dùng dễ nhận diện phần tử khi sử dụng */
+/* background-color: #86b19d; /*thay đổi màu nền khi hover*/
+/* transform: scale(1.5); /*phóng to thẻ khi hover lên 10%*/
+/* transform: translate(0,-10px); /*dịch chuyển thẻ khi hover hướng lên trên 10px*/
+/* transform: rotate(10deg); /*xoay thẻ khi hover góc 5 độ*/
+/* transition: all 0.5s ease-in; /*hiệu ứng chuyển đổi mượt mà trong 3s*/ 
+
+
+
+img{
+   max-width:100%; /* cỡ hình ảnh về kích thước của thẻ cha nếu nó vượt quá*/
+}
+
+/* ví dụ điều chỉnh các phần */
+.nav{
+    background-color: transparent;
+}    
+
+.nav ul li{ /* viết theo gia phả */
+    float: left;
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+    margin-right: 30px; /* khoảng cách giữa các thẻ li */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav li a{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav ul li.right{
+    float: right; /* cho thẻ li này về bên phải */
+}
+
+footer{
+    background-color:#254d3a ;
+    color:#fafafa;
+    font-size: 13px;
+    height: 400px;
+    line-height: 3.0;
+}
+.footer ul li{
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+}
+
+button{
+    color: #fafafa;
+    width: 130px;
+    height: 60px;
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.form-group{
+    float: left;
+    width: 20%;
+    margin-bottom: 15px;
+}
+.form-group input{
+    float: left;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+.form-group input[type="email"]{
+    color: green;
+    border: none;
+}
+.form-group input[name="full_name"]{
+    color:burlywood
+}   

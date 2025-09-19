@@ -8,7 +8,7 @@ hx.classList.remove("xyz");
 hx.classList.add("abc");
 hx.classList.add("gik");
 
-var dv=document.getElementById("devide");
+var dv= document.getElementById("devide");
 //var f = 14;
 //var d = setInterval(function(){
 //    dv.style.fontSize = f + "px";
