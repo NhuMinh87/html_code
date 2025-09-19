@@ -35,15 +35,15 @@ e.innerText= "Stop";
 var flag = false;
 var fanbox = null;
 function startFan(e){
-    if (flag == false) {
-        var fan = document.getElementById ("fan");
+    if(flag == false){
+        var fan = document.getElementById("fan");
         var dg = 0;
-        fanbox = setInterval (function(){
-            fan.style.transform = `rotate($(dg)deg)`;
+        fanbox = setInterval(function(){
+            fan.style.transform = `rotate(${dg}deg)`;
             dg+=2;
-       },1);
-    //var btn= document.getElementById("btn-fan");
-    //btn.innerText= "Stop"; //change text
+        },1);
+        // var btn = document.getElementById("btn-fan");
+        // btn.innerText = "Stop";
         e.innerText = "Stop";
         flag = true;
     }else{
