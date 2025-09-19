@@ -106,7 +106,7 @@ p{
 
 .form-group{
     float: left;
-    width: 20%;
+    width: 15%;
     margin-bottom: 15px;
 }
 .form-group input{
@@ -131,7 +131,7 @@ div{
     width: 100%; /* tính toán chiều rộng: 25% thẻ cha- 2px của border - 20px của margin (left right)*/
     float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
     border: none; /*border-bottom. border-top, border-left, border-right */
-    margin: 0px; /*khoảng cách giữa các thẻ div */
+    margin: 10px; /*khoảng cách giữa các thẻ div */
     padding: 15px; /*khoảng cách giữa viền và nội dung */
     /* margin và padding cỏ thẻ đặt riêng lẻ cho từng phía */
     /* margin: top right bottom left */
@@ -154,35 +154,35 @@ div{
 }
 
 .D21{
-    width: 33%;
+    width: 32%;
 }
     
 .D22{
-    width: 33%;
+    width: 32%;
 }
 
 .D23{
-    width: 33%;
+    width: 32%;
 }
 
 .D31{
-    width: 22%;
-    margin: 15px;
+    width: 23%;
+    margin: 10px;
 }
 
 .D32{
-    width: 22%;
-    margin: 15px;
+    width: 23%;
+    margin: 10px;
 }
 
 .D33{
-    width: 22%;
-    margin: 15px;
+    width: 23%;
+    margin: 10px;
 }
 
 .D34{
-    width: 22%;
-    margin: 15px;
+    width: 23%;
+    margin: 10px;
 }
 
 .D41{
@@ -315,11 +315,11 @@ div{
 }
 
 .D91{
-    width: 49%;
+    width: 48%;
 }
 
 .D92{
-    width: 49%;
+    width: 48%;
 }
 
 .D101{
@@ -327,23 +327,23 @@ div{
 }
 
 .D102{
-    width: 31%;
-    margin: 10x;
-    padding: 15px;
+    width: 33%;
+    margin: 0px;
+    padding: 0px;
     font-size: 14px;
 }
 
 .D103{
-    width: 31%;
-    margin: 10px;
-    padding: 15px;
+    width: 33%;
+    margin: 0px;
+    padding: 0px;
     font-size: 14px;
 }
 
 .D104{
-    width: 31%;
-    margin: 10px;
-    padding: 15px;
+    width: 33%;
+    margin: 0px;
+    padding: 0px;
     font-size: 14px;
 }
 
@@ -351,23 +351,23 @@ footer{
     background-color:#254d3a ;
     color:#fafafa;
     font-size: 13px;
-    height: 400px;
+    height: 450px;
     line-height: 3.0;
 }
 .footer ul li{
     list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
 }
 .F1{
-    width: 15%;   
+    width: 16%;   
 }
 
 .F2{
-    width: 35%;
+    width: 30%;
     text-align: center;
 }
 
 .F3{
-    width: 35%;
+    width: 30%;
     text-align: left;
 }
 
