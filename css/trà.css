@@ -37,8 +37,8 @@ body{
 }
 
 .Mobai{
-    text-align: center;
     color: white;
+    
 }
 
 .Mobai1{
@@ -54,7 +54,7 @@ body{
     font-family: sans-serif;
     font-size: 20px;
     line-height: 2.5;
-    text-align: center;   
+    text-align: center;
     font-weight: 50;
 }
 
@@ -67,6 +67,7 @@ p{
 .section{
     float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
     width: 100%; /* chiều rộng của thẻ section */
+    margin-bottom: 20px;
 }
 
 .container{ /*tạo 1 hộp nội dung giữa các section */
@@ -144,6 +145,14 @@ div{
     text-align:justify; /* căn chữ đều 2 bên justify, left, right, center*/
 }
 
+div:hover{ /*hiệu ứng khi hover chuột vào thẻ, giúp người dùng dễ nhận diện phần tử khi sử dụng */
+    /* background-color: #86b19d; /*thay đổi màu nền khi hover*/
+    /*transform: scale(1.1); /*phóng to thẻ khi hover lên 10%*/
+    /* transform: translate(0,-10px); /*dịch chuyển thẻ khi hover hướng lên trên 10px*/
+    /* transform: rotate(10deg); /*xoay thẻ khi hover góc 5 độ*/
+    transition: all 0.5s ease-in; /*hiệu ứng chuyển đổi mượt mà trong 3s*/
+}
+
 .D11{
     width: 30%;
     margin-right: 50px;
@@ -183,6 +192,10 @@ div{
 .D34{
     width: 23%;
     margin: 10px;
+}
+
+.D4{
+    background: #E9F0E9;
 }
 
 .D41{
@@ -338,6 +351,7 @@ div{
     margin: 0px;
     padding: 0px;
     font-size: 14px;
+    text-align:center;
 }
 
 .D104{
@@ -345,6 +359,27 @@ div{
     margin: 0px;
     padding: 0px;
     font-size: 14px;
+}
+
+.A-01{
+    text-align: center;
+    width:33%;
+    padding: 10px;
+    margin: 1px;
+}
+
+.A-02{
+    text-align: center;
+    width:33%;
+    padding: 10px;
+    margin: 1px;
+}
+
+.A-03{
+    text-align: center;
+    width:33%;
+    padding: 10px;
+    margin: 1px;
 }
 
 footer{
