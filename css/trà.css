@@ -14,10 +14,10 @@ a:hover{ /* set sẵn màu hover. link */
 
 header{
 /* Hình nền */
-    background-image: url('/images/Tea/Anh\ nen\ tra\ ngang.PNG'); /* thay bằng link ảnh của bạn */
-    background-size: 1350px 650px;     /* phủ toàn màn hình */
+    background-image: url('/images/Tea/Anh\ nen\ tra\ ngang.PNG'); /* thay bằng link ảnh của bạn ,nếu muốn lồng 2 ảnh thì cách nhau bằng dấu "," link nào ở trên sẽ là ảnh nằm trên*/
+    background-size: 1350px 650px; /* phủ toàn màn hình */
     background-position: center; /* căn giữa */
-    background-repeat: repeat; /* không lặp */
+    background-repeat: no-repeat; /* không lặp */
     justify-content: center;
     align-items: center;
     height: 620px;

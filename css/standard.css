@@ -14,7 +14,8 @@ a:hover{ /* set sẵn màu hover. link */
 
 header{
 /* Hình nền */
-    background-image: url('/images/Tea/Anh\ nen\ tra\ ngang.PNG'); /* thay bằng link ảnh của bạn */
+    background-image: url('/images/Tea/Anh\ nen\ tra\ ngang.PNG'); /* thay bằng link ảnh của bạn ,nếu muốn lồng 2 ảnh thì cách nhau bằng dấu "," link nào ở trên sẽ là ảnh nằm trên; 
+    linear-gradient: làm mờ màu nền, theo dải màu chọn */
     background-size: 1350px 650px;     /* phủ toàn màn hình */
     background-position: center; /* căn giữa */
     background-repeat:repeat; /* không lặp */
@@ -79,7 +80,7 @@ div{
 /* transform: translate(0,-10px); /*dịch chuyển thẻ khi hover hướng lên trên 10px*/
 /* transform: rotate(10deg); /*xoay thẻ khi hover góc 5 độ*/
 /* transition: all 0.5s ease-in; /*hiệu ứng chuyển đổi mượt mà trong 3s*/ 
-
+/* cursor: pointer; di chuột vào chuyển thành hình bàn tay */
 
 
 img{
@@ -158,3 +159,27 @@ button{
     /* display: inline; /* chiều dài bằng đúng nội dung của phần tử (nhưng không dùng được width, height) */
     display:inline-block /* giống inline nhưng cài đặt đc width, height */
 }
+
+.display{
+    display: flex; /* dàn hàng ngang giống float left, giống inline; ko đặt flex direction thi mặc định là row, xếp hàng ngang  */
+    flex-direction: row; /* xep hang ngang */
+    flex-direction: column; /* xep hang doc */
+    justify-content: center; /* căn theo chiều đã chọn (row hoặc column, mặc định là row), flex-start: tất cả thu về đầu hàng, flex-end tất cả thu về cuối hàng, center: căn giữa hàng */
+    /* space-between: giãn đều, 3 ông thì có 2 ông đứng đầu cuối dòng, space-around: giãn đều nhưng có khoảng trống đầu cuối dòng*/
+    align-items: center ; /* căn theo chiều còn lại */
+    align-self: flex-start; /* ngoại lệ 1 trường hợp riêng biệt xếp đầu dòng, flex-end */
+}
+
+.position{
+    position: static; /* căn theo mặc định, ko dùng đc width, height */
+    position: relative; /* là thẻ cha làm căn cứ, 1st sẽ căn theo mặc định khung màn hình, 2st absolute sẽ căn theo position gần nhất (relative, absolute) */ 
+    position: absolute; /* căn theo thẻ cha chứa nó có thuộc tính position (bất kể là relative hay absolute */
+    position: fixed; /* để chốt cố định 1 đoạn, ví dụ thanh header luôn luôn đc hiển thị khi kéo chuột, đặt header: top=0; footer: bottom=0; để 2 thanh luôn luôn sát trình duyệt  */
+}
+/* tiền tố before, after
+::before{
+    content: 
+} */
+
+/*background-clip: muốn màu nền cho phần nào (conten, padding, border) thì chọn phần đó */
+

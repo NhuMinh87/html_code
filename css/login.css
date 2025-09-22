@@ -10,10 +10,24 @@ body{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .form-body{
     background-color: #FFF7EF;
     height: 100%;
+    background-image: url('/images/watch/background-image.jpg'); /* thay bằng link ảnh của bạn ,nếu muốn lồng 2 ảnh thì cách nhau bằng dấu "," link nào ở trên sẽ là ảnh nằm trên*/
+    background-size: 1350px 650px; /* phủ toàn màn hình */
+    background-position: center; /* căn giữa */
+    background-repeat: no-repeat; /* không lặp */
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    font-weight: 100; 
+    float: left;
+   
 }
 .ioform-layout{
     height: 100%;
@@ -22,6 +36,7 @@ body{
 .form-body .form-holder{
     margin-left: 0;
     width: 100%;
+    
 }
 .form-content{
     background-color: transparent;
@@ -36,13 +51,17 @@ body{
 }
 .form-content .image-container img{
     max-width: 480px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-items{
     padding: 35px 30px;
-    background-color: #F7941D;
+    background-color: transparent;
     max-width: 380px;
     text-align: center;
     position: relative;/* de co the chua cai img-float */
+     
 }
 .img-float{
     position: absolute; /* de no co the di chuyen duoc */
@@ -100,17 +119,19 @@ a.btn{ /* thẻ a có class btn */
     margin-top: 38px;
     float: left;
     width: 100%;
+    color: #F7941D;
+
 }
 .other-links span{
     font-size: 14px;
-    color: #000000;
+   color: #F7941D;
     width: 100%;
     float: left;
     margin-bottom: 10px;
 }
 .other-links a{
     font-size: 14px;
-    color: #ffffff;
+   color: #F7941D;
     text-decoration: none;
     margin-right: 15px;
 }
