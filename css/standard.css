@@ -151,3 +151,10 @@ button{
 .form-group input[name="full_name"]{
     color:burlywood
 }   
+
+.display {
+/*  display: none; /* không hiển thị, bị tàng hình, ẩn đi */
+/*  display:  block; /* chiếm nguyên width 1 dòng */
+    /* display: inline; /* chiều dài bằng đúng nội dung của phần tử (nhưng không dùng được width, height) */
+    display:inline-block /* giống inline nhưng cài đặt đc width, height */
+}
