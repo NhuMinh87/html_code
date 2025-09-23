@@ -13,21 +13,26 @@ a:hover{ /* set sẵn màu hover. link */
 }
 
 h1{
-    font-size: 70px;
-    font-weight: 250;
+    font-size: 65px;
+    font-weight: 100; /* độ đậm của chữ */
 }
 
 h2{
-    font-size: 60px;
-    font-weight: 250;
+    font-size: 55px;
+    font-weight: 100; /* độ đậm của chữ */
+}
+
+h3{
+    font-size: 45px;
+    font-weight: 100; /* độ đậm của chữ */
 }
 
 
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Cormorant Garamond", sans-serif;
     background-color: #fafafa; /* màu nền của trang web */
-    font-size: 15px; /* kích thước chữ */
-    font-weight: 400; /* độ đậm của chữ */
+    font-size: 22px; /* kích thước chữ */
+    font-weight: 100; /* độ đậm của chữ */
     color: #444444; /* màu chữ */
     text-align:left; /* canh trái, phải, giữa */
     padding: 20px; /* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
@@ -114,7 +119,7 @@ img{
 .nav li a{
     color: #444444;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .collection{
@@ -210,31 +215,96 @@ img{
     flex: 1;
     display: grid; /* dùng grid để căn đều */      
     grid-template-columns: 1fr 1fr 1fr; /* 3 cột */
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 40px 0px;
 }
 
-footer{
-    background-color:#254d3a ;
-    color:#fafafa;
-    font-size: 13px;
-    height: 400px;
-    line-height: 3.0;
+.S-01, .S-02{
+    padding: 0px 0px 90px 0px;
 }
+.S-03{
+    text-align: left;
+    padding-left: 35px;
+}
+
+.S04{
+    flex: 1;
+    display: grid; /* dùng grid để căn đều */           
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    gap: 30px;
+    padding: 0px 0px 90px 0px;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+}
+
+.quality{
+    flex:1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0px;
+    padding: 0px 0px 90px 0px;
+    padding-left: 30px;
+}
+
+.lover{
+   padding: 0px 0px 90px 0px;
+}
+.lover-01{
+    padding-left: 30px;
+}
+
+.lover-02{
+    flex:1;
+    display:grid;
+    grid-template-rows: 2fr;
+    gap:15px;
+    padding-left: 30px;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap:0;
+    background-color:none ;
+    color: #444444;
+    font-size: 22px;
+    height: 400px;
+    line-height: 2.0;
+    text-align: center;
+}
+
 .footer ul li{
     list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
 }
 
+.footer-01, .footer-03{
+    text-align: center;
+}
+
+.footer-04{
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-02{
+    text-align: center;
+    border-left: 0.5px solid #444444;
+    border-right: 0.5px solid #444444;
+    
+} 
+
 button{
-    color: #fafafa;
-    width: 130px;
-    height: 60px;
-    font-size: 10px;
+    color: #444444;
+    width: 180px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 14px;
     margin: 5px;
     padding: 5px;
-    border: 2px solid white;
-    background-color: transparent;
+    border: 1px solid #E9F0E9;
+    background-color: #E9F0E9;
 }
 
 .form-group{
