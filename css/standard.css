@@ -131,6 +131,7 @@ button{
     padding: 5px;
     border: 2px solid white;
     background-color: transparent;
+    /* muốn nút button thành hình tròn dùng border radius */
 }
 
 .form-group{
@@ -169,7 +170,42 @@ button{
     /* space-between: giãn đều, 3 ông thì có 2 ông đứng đầu cuối dòng, space-around: giãn đều nhưng có khoảng trống đầu cuối dòng*/
     align-items: center ; /* căn theo chiều còn lại */
     align-self: flex-start; /* ngoại lệ 1 trường hợp riêng biệt xếp đầu dòng, flex-end */
+    
+    /* display: flex; tự nó đã làm gì?
+    Khi bạn chỉ viết display: flex;, container trở thành flex container.
+    Mặc định:
+    flex-direction: row → các phần tử con xếp hàng ngang.
+    justify-content: flex-start → các phần tử con cúi về bên trái theo chiều ngang.
+    align-items: stretch → các phần tử con giãn cao bằng nhau theo chiều dọc (chiều cao container).
+    Nghĩa là ngay cả khi không viết justify-content hay align-items, vẫn có giá trị mặc định.*/
 }
+
+.display grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 cột bằng nhau */
+    grid-template-rows: 1fr 1fr;   /* 2 hàng bằng nhau */
+    gap: 10px;                     /* khoảng cách giữa các ô */
+    /* 4 ảnh sẽ xếp thành 2x2, rất cân đối 
+    grid-template-columns: 1fr 1fr; 2 cột, mỗi cột bằng nhau.
+    grid-template-columns: 2fr 1fr; cột 1 gấp đôi cột 2.*/
+}
+
+.flex{
+    flex: 2; /* to gấp đôi */
+    flex: 1; /* nhỏ bằng 1 */
+    /* flex cùng = 1 thì chia đều chiều rộng = nhau */
+    }
+    /* Container có tổng 2 + 1 = 3 phần
+    big có flex = 2, chiếm 2/3 chiều rộng
+    small có fles = 1, chiếm 1/3 chiều rộng */
+
+
+.small img{
+    aspect-ratio: 1/1;  /* khung vuông */
+    object-fit: cover; /* ảnh sẽ phóng to, cắt bớt để lấp đầy khung (không bị méo)*/
+    object-position: center; /* mặc định, chủ thể ảnh nằm chính giữa sau khi cắt */
+}
+
 
 .position{
     position: static; /* căn theo mặc định, ko dùng đc width, height */
@@ -177,6 +213,7 @@ button{
     position: absolute; /* căn theo thẻ cha chứa nó có thuộc tính position (bất kể là relative hay absolute */
     position: fixed; /* để chốt cố định 1 đoạn, ví dụ thanh header luôn luôn đc hiển thị khi kéo chuột, đặt header: top=0; footer: bottom=0; để 2 thanh luôn luôn sát trình duyệt  */
 }
+
 /* tiền tố before, after
 ::before{
     content: 

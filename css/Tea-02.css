@@ -88,13 +88,9 @@ img{
 .nav-00{
     padding: 0px 0px 90px 0px;
 }
-.nav-01{
+.nav-01, .nav-02{
     width: 50%;
 }
-.nav-02{
-    width: 50%;
-}
-
 
 .nav ul li{ /* viết theo gia phả */
     float: left;
@@ -115,7 +111,7 @@ img{
     padding: 0px 0px 90px 0px;
 }
 .collection-01{
-    text-align: center;
+    text-align: center; /*???*/
 }
 .collection-02{
     padding-left: 50px;
@@ -123,6 +119,68 @@ img{
 
 .peony-teas{
     text-align: center;
+    padding: 90px 0px 90px 0px;
+}
+
+.image{
+    display: flex;
+    gap: 10px; /* khoảng cách giữa 2 bên */
+    padding: 0px 0px 90px 0px;
+}
+
+/* Ảnh to bên trái */
+.big-image{
+    flex: 1;
+}
+.big-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cắt cho vừa */
+    border-radius: 5px;
+}
+
+/* Nhóm ảnh nhỏ bên phải */
+.small-group {
+    flex: 1;
+    display: grid; /* dùng grid để căn đều */      
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    grid-template-rows: 1fr 1fr;    /* 2 hàng */
+    gap: 10px;
+}
+
+.small-group img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crop ảnh cho đầy khung */
+    border-radius: 5px;
+    aspect-ratio: 1/1; /* khung vuông */
+}
+
+.paragraph-01{
+    padding: 0px 0px 90px 0px;
+}
+.paragraph-01-01{
+    width: 50%;
+    text-align: center;
+}
+.paragraph-01-02{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.paragraph-02{
+    flex: 1;
+    display: grid; /* dùng grid để căn đều */      
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    gap: 10px;
+    padding: 0px 0px 90px 0px;
+}
+.paragraph-02-01 img, .paragraph-02-02 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crop ảnh cho đầy khung */
+    border-radius: 5px;
+    aspect-ratio: 1/1; /* khung vuông */
 }
 
 
