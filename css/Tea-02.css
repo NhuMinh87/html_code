@@ -12,6 +12,17 @@ a:hover{ /* set sẵn màu hover. link */
     color: #ad7408; /* đổi màu chữ khi hover chuột vào */
 }
 
+h1{
+    font-size: 70px;
+    font-weight: 250;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: 250;
+}
+
+
 body{
     font-family: "Roboto", sans-serif;
     background-color: #fafafa; /* màu nền của trang web */
@@ -102,7 +113,7 @@ img{
 
 .nav li a{
     color: #444444;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
 }
 
@@ -114,7 +125,11 @@ img{
     text-align: center; /*???*/
 }
 .collection-02{
-    padding-left: 50px;
+    flex: 1;
+    display: grid; /* dùng grid để căn đều */      
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    gap: 10px;
+    padding-left: 70px;
 }
 
 .peony-teas{
@@ -183,6 +198,22 @@ img{
     aspect-ratio: 1/1; /* khung vuông */
 }
 
+.gallery{
+    text-align: center;
+    padding: 0px 0px 90px 0px;
+}
+.gallery-01{
+    text-align: center;
+}
+
+.gallery-02{
+    flex: 1;
+    display: grid; /* dùng grid để căn đều */      
+    grid-template-columns: 1fr 1fr 1fr; /* 3 cột */
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0px 0px 90px 0px;
+}
 
 footer{
     background-color:#254d3a ;
