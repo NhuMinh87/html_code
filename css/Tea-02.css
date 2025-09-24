@@ -24,7 +24,7 @@ h2{
 
 h3{
     font-size: 45px;
-    font-weight: 100; /* độ đậm của chữ */
+    font-weight: 200; /* độ đậm của chữ */
 }
 
 
@@ -52,8 +52,7 @@ p{
 
 .container{ /*tạo 1 hộp nội dung giữa các section */
     float: none;
-    margin-left: auto; /* canh giữa thẻ container */
-    margin-right: auto; /* canh giữa thẻ container */
+    margin: 0 auto;
     width: 1360px; /* chiều rộng của thẻ container */
 }
 
@@ -94,12 +93,11 @@ img{
     background-color: transparent;
 }    
 
-/*??? */
-.nav ul li.Peony{
-    font-size: 14;
-    font-weight: 10000;
-    color: red;
-}
+/*???
+.nav ul li.Peony a{
+    font-size: 30px;
+    font-weight: 700;
+} */
 
 .nav-00{
     padding: 0px 0px 90px 0px;
@@ -109,7 +107,7 @@ img{
 }
 
 .nav ul li{ /* viết theo gia phả */
-    float: left;
+    float:left;
     list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
     margin-right: 30px; /* khoảng cách giữa các thẻ li */
     padding-top: 15px;
