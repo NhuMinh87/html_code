@@ -176,13 +176,15 @@ img{
 
 .paragraph-01{
     padding: 0px 0px 80px 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
 .paragraph-01-01{
-    width: 50%;
+   
     text-align: center;
 }
 .paragraph-01-02{
-    width: 50%;
+    object-fit: cover; /* crop ảnh cho đầy khung */
     border-radius: 5px;
 }
 
@@ -215,6 +217,7 @@ img{
     grid-template-rows: 1fr;
     gap: 10px;
     padding: 0px 0px 40px 0px;
+    object-fit: cover; /* crop ảnh cho đầy khung */
 }
 
 .S-01, .S-02{
@@ -295,7 +298,7 @@ img{
 button{
     color: #444444;
     width: 180px;
-    height: 70px;
+    height: 55px;
     border-radius: 50%;
     font-size: 14px;
     margin: 5px;
