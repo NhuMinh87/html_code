@@ -139,7 +139,7 @@ button{
     width: 100%;
 }
 
-.row-03 select {
+.row-03 select{
     font-family: "Cormorant Garamond", sans-serif;
     width: 50%;        /* rộng bằng container */
     height: 50px;       /* cao giống input */
@@ -158,7 +158,7 @@ button{
 
 .row-04 select {
     font-family: "Cormorant Garamond", sans-serif;
-    width: 160px;/* rộng bằng container */
+    width: 140px;/* rộng bằng container */
     height: 60px;       /* cao giống input */
     margin: 5px;
     font-size: 22px;    /* chữ to hơn */
@@ -187,7 +187,7 @@ label{
     width: 100%;
     height: 100%;
     object-fit: cover; /* cắt cho vừa */
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 .information{
@@ -218,6 +218,10 @@ label{
 
 .related{
     padding: 0px 0px 100px 45px;
+}
+
+.reviews{
+    text-align: center;
 }
 
 .footer{

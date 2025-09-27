@@ -100,7 +100,7 @@ img{
 } */
 
 .nav-00{
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 80px 0px;
 }
 .nav-01, .nav-02{
     width: 50%;
@@ -122,7 +122,7 @@ img{
 
 .collection{
     text-align: center;
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 80px 0px;
 }
 .collection-01{
     text-align: center; /*???*/
@@ -132,18 +132,18 @@ img{
     display: grid; /* dùng grid để căn đều */      
     grid-template-columns: 1fr 1fr; /* 2 cột */
     gap: 10px;
-    padding-left: 70px;
+    padding-left: 30px;
 }
 
 .peony-teas{
     text-align: center;
-    padding: 90px 0px 90px 0px;
+    padding: 90px 0px 80px 0px;
 }
 
 .image{
     display: flex;
     gap: 10px; /* khoảng cách giữa 2 bên */
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 80px 0px;
 }
 
 /* Ảnh to bên trái */
@@ -175,7 +175,7 @@ img{
 }
 
 .paragraph-01{
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 80px 0px;
 }
 .paragraph-01-01{
     width: 50%;
@@ -191,7 +191,7 @@ img{
     display: grid; /* dùng grid để căn đều */      
     grid-template-columns: 1fr 1fr; /* 2 cột */
     gap: 10px;
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 80px 0px;
 }
 .paragraph-02-01 img, .paragraph-02-02 img{
     width: 100%;
@@ -203,14 +203,13 @@ img{
 
 .gallery{
     text-align: center;
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 80px 0px;
 }
 .gallery-01{
     text-align: center;
 }
 
 .gallery-02{
-    flex: 1;
     display: grid; /* dùng grid để căn đều */      
     grid-template-columns: 1fr 1fr 1fr; /* 3 cột */
     grid-template-rows: 1fr;
@@ -219,7 +218,7 @@ img{
 }
 
 .S-01, .S-02{
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 70px 0px;
 }
 .S-03{
     text-align: left;
@@ -231,7 +230,7 @@ img{
     display: grid; /* dùng grid để căn đều */           
     grid-template-columns: 1fr 1fr; /* 2 cột */
     gap: 30px;
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 70px 0px;
     width: 100%;
     height: 100%;
     padding-left: 30px;
@@ -242,12 +241,12 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:0px;
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 70px 0px;
     padding-left: 30px;
 }
 
 .lover{
-   padding: 0px 0px 90px 0px;
+   padding: 0px 0px 80px 0px;
 }
 .lover-01{
     padding-left: 30px;
