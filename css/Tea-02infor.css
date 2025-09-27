@@ -1,0 +1,232 @@
+*{ /* set chung style cho tất cả các phần tử */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none; /* bỏ gạch chân của thẻ a */
+    color: #444444;
+}
+
+h1{
+    font-size: 65px;
+    font-weight: 100; /* độ đậm của chữ */
+}
+
+h2{
+    font-size: 55px;
+    font-weight: 100; /* độ đậm của chữ */
+}
+
+h3{
+    font-size: 45px;
+    font-weight: 200; /* độ đậm của chữ */
+}
+
+
+body{
+    font-family: "Cormorant Garamond", sans-serif;
+    background-color: #fafafa; /* màu nền của trang web */
+    font-size: 22px; /* kích thước chữ */
+    font-weight: 100; /* độ đậm của chữ */
+    color: #444444; /* màu chữ */
+    text-align:left; /* canh trái, phải, giữa */
+    padding: 20px; /* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
+    line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px, tự thêm so với hướng dẫn của thầy*/
+}
+
+p{
+    margin-bottom: 0.75 rem; /* khoảng cách giữa các đoạn văn */
+}
+
+/* layout */
+/* style cho section */
+.section{
+    float: left; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    width: 100%; /* chiều rộng của thẻ section */
+}
+
+.container{ /*tạo 1 hộp nội dung giữa các section */
+    float: none;
+    margin: 0 auto;
+    width: 1360px; /* chiều rộng của thẻ container */
+}
+
+img{
+   max-width:100%; /* cỡ hình ảnh về kích thước của thẻ cha nếu nó vượt quá*/
+}
+
+/* ví dụ điều chỉnh các phần */
+.nav{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1px solid #444444;
+}   
+
+.nav ul{
+    display: flex;  /* dàn hàng ngang giống float left, giống inline; ko đặt flex direction thi mặc định là row, xếp hàng ngang  */
+}
+
+.nav ul li{ /* viết theo gia phả */
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+    margin-right: 30px; /* khoảng cách giữa các thẻ li */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}   
+
+.nav li a{
+    color: #444444;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding: 15px 0px 60px 0px;
+    margin: 0;
+    display: flex;              /* để các phần nằm ngang */
+    gap: 5px;                    /* khoảng cách giữa phần tử */
+}
+
+
+.breadcrumb li + li::before {
+    content: " / ";              /* cái dấu “/” giữa các phần */
+    margin: 0 5px;
+}
+
+button{
+    color: #444444;
+    width: 180px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #E9F0E9;
+    background-color: #E9F0E9;
+}
+
+
+.cart{
+    display: flex;
+    gap: 10px; /* khoảng cách giữa 2 bên */
+    padding: 0px 0px 20px 0px;
+}
+
+.cart-left{
+    flex: 1.2;
+    display: grid; /* dùng grid để căn đều */      
+    grid-template-columns: 1fr 7fr; /* 1 cột */
+    gap: 10px;
+}
+
+.cart-right{
+    flex:1;
+    display: grid;
+    grid-template-rows: 2.5fr 1.0fr 0.2fr 0.9fr;
+    gap: 30px;
+    padding: 0px 0px 100px 0px
+}
+
+.row-01, .row-02{
+    border-bottom: 0.1px solid #444444;
+}
+
+.row-03{
+    width: 100%;
+}
+
+.row-03 select {
+    width: 50%;        /* rộng bằng container */
+    height: 50px;       /* cao giống input */
+    margin: 5px;
+    font-size: 15px;    /* chữ to hơn */
+    padding: 10px;    /* khoảng cách trong ô */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label{
+    font-size: 22px;
+    float:left;
+    text-align: justify;
+}
+
+.description{
+    display: grid;
+    gap: 10px; /* khoảng cách giữa 2 bên */
+    grid-template-columns: 1.2fr 1fr;
+    background: #E9F0E9;
+    padding: 15px 0px 0px 30px;
+}
+
+.description-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cắt cho vừa */
+    border-radius: 30px;
+}
+
+.information{
+    background: #E9F0E9;
+    padding: 0px 0px 0px 45px;
+}
+
+.information-02{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:0px;
+}
+
+.ingredient{ 
+    background: #E9F0E9;
+    padding: 0px 0px 0px 45px;
+}
+
+.ingredient ul{
+    padding-left: 80px;
+}
+
+.shipping{
+    background: #E9F0E9;
+    padding: 0px 0px 50px 45px;
+}
+
+.related{
+    padding: 0px 0px 100px 45px;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap:0;
+    background-color:none ;
+    color: #444444;
+    font-size: 22px;
+    height: 400px;
+    line-height: 2.0;
+    text-align: center;
+}
+
+.footer ul li{
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+}
+
+.footer-01, .footer-03{
+    text-align: center;
+}
+
+.footer-04{
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-02{
+    text-align: center;
+    border-left: 0.5px solid #444444;
+    border-right: 0.5px solid #444444;
+} 
