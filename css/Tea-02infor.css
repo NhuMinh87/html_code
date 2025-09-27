@@ -98,35 +98,35 @@ img{
 }
 
 button{
+    font-family: "Cormorant Garamond", sans-serif;
     color: #444444;
     width: 180px;
-    height: 70px;
-    border-radius: 50%;
-    font-size: 14px;
+    height: 60px;
+    border-radius: none;
+    font-size: 22px;
     margin: 5px;
     padding: 5px;
     border: 1px solid #E9F0E9;
     background-color: #E9F0E9;
 }
 
-
 .cart{
     display: flex;
     gap: 10px; /* khoảng cách giữa 2 bên */
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .cart-left{
-    flex: 1.2;
+    flex: 1.1;
     display: grid; /* dùng grid để căn đều */      
     grid-template-columns: 1fr 7fr; /* 1 cột */
     gap: 10px;
 }
 
 .cart-right{
-    flex:1;
+    flex: 1;
     display: grid;
-    grid-template-rows: 2.5fr 1.0fr 0.2fr 0.9fr;
+    grid-template-rows: 1.4fr 0.5fr 0.2fr 0.3fr;
     gap: 30px;
     padding: 0px 0px 100px 0px
 }
@@ -140,13 +140,33 @@ button{
 }
 
 .row-03 select {
+    font-family: "Cormorant Garamond", sans-serif;
     width: 50%;        /* rộng bằng container */
     height: 50px;       /* cao giống input */
     margin: 5px;
-    font-size: 15px;    /* chữ to hơn */
+    font-size: 22px;    /* chữ to hơn */
     padding: 10px;    /* khoảng cách trong ô */
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.row-04-01{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px 0px 20px 0px;
+}
+
+.row-04 select {
+    font-family: "Cormorant Garamond", sans-serif;
+    width: 160px;/* rộng bằng container */
+    height: 60px;       /* cao giống input */
+    margin: 5px;
+    font-size: 22px;    /* chữ to hơn */
+    padding: 10px;    /* khoảng cách trong ô */
+    border: 1px solid #E9F0E9;
+    background-color: #E9F0E9;
+    border-radius: 4px;
+    text-align: center;
 }
 
 label{
