@@ -1,0 +1,79 @@
+*{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+}
+
+html, body{
+      width: 100%;
+      height: 100%;
+}
+
+.container{
+      width: 100%;
+      border-color: coral;
+}
+
+.menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+li{
+      list-style: none;
+      float:left;
+      width: 100px;
+      line-height: 30px;
+      text-align: center;
+      color: white;
+      height: 30px;
+      background-color: grey;
+      position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+    background: grey;
+    top: 30px;       /* cho nó nằm ngay dưới menu cha */
+    left: 0;
+    white-space: nowrap; /* tránh xuống dòng */
+}
+
+.sub-menu li {
+    float: none; /* bỏ float cũ đi */
+    display: inline-block; /* dàn ngang */
+    width: auto;           /* để chiều rộng tự theo chữ */
+    padding: 0 15px;       /* khoảng cách giữa các mục */
+    background: grey;
+    color: white;
+}
+
+
+.menu li:hover{
+    background-color: antiquewhite;
+    color: black;
+    cursor: pointer;
+}
+
+.menu li:hover>.sub-menu{
+      display: block;
+}
+
+.pl-100{
+      left: 0px;
+      top: 30px;
+}
+
+.pl-100 li {
+    display: block; /* submenu cấp sâu hơn vẫn hiển thị dọc */
+}
+
+.clearFix::after{
+      content: "";
+      display: block;
+      clear: both;
+}
+
+
+

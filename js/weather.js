@@ -19,3 +19,4 @@ document.getElementById("w-day").innerText = wt.day;
 document.getElementById("w-time").innerText = wt.time;
 document.getElementById("w-rain").innerText = wt.rain;
 });
+

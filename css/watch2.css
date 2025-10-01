@@ -1,101 +1,89 @@
-nav{
-    background-color: #000;
-}
+     /* Thanh menu chính */
+    nav {
+     background-color: #000;
+     font-family: "Lato", sans-serif;
+    }
 
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    list-style: none;
-    margin: 0;
-}
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+      list-style: none;
+      margin: 0;
+      border-bottom: #fff 2px solid;
+    }
 
-.menu > li{
-    position: relative;
-    margin: 0 20px;
-}
+    .menu > li {
+      position: relative;
+      margin: 0 20px;
+    }
 
-/* Link menu chính */
-.menu > li > a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-}
+    .menu > li > a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
 
-/* Thêm dấu phân cách | giữa các mục */
-.menu > li:not(:last-child)::after {
+    /* Thêm dấu phân cách | giữa các mục */
+    .menu > li:not(:last-child)::after {
       content: "|";
       color: #fff;
       margin-left: 20px;
       font-weight: normal;
 }
 
-/* Mega menu (ẩn mặc định) */
-.mega-menu {
+    /* Mega menu (ẩn mặc định) */
+    .mega-menu {
       display: none;
       position: absolute;
       left: 0;
       top: 100%;
-      width: 900px;
+      width: 800px;
       background: #fff;
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       color: #333;
       z-index: 100;
-}
+    }
 
-/* Khi hover thì hiện menu con */
-.menu > li:hover .mega-menu {
+    /* Khi hover vào SHOP thì hiện mega menu */
+    .menu > li:hover .mega-menu {
       display: flex;
-}
+    }
 
-/* Các cột trong mega menu */
-.mega-column {
+    .mega-column {
       flex: 1;
       margin: 0 15px;
-}
+    }
 
-.mega-column h3 {
+    .mega-column h3 {
       font-size: 14px;
       margin-bottom: 10px;
-      color: #b08d57; /* vàng nhạt */
+      color: #b08d57; /* màu vàng nhạt */
       text-transform: uppercase;
-}
+    }
 
-.mega-column ul {
+    .mega-column ul {
       list-style: none;
       padding: 0;
       margin: 0;
-}
+    }
 
-.mega-column ul li {
+    .mega-column ul li {
       margin-bottom: 8px;
-}
+    }
 
-.mega-column ul li a {
+    .mega-column ul li a {
       text-decoration: none;
       color: #333;
       font-size: 14px;
-}
+    }
 
-/* Cột hình ảnh */
-.mega-column img {
+    /* Cột có hình ảnh */
+    .mega-column img {
       max-width: 100%;
       border: 1px solid #ccc;
-}
-
-.container {
-  display: flex;
-  justify-content: center; /* căn giữa ngang */
-  align-items: center;     /* căn giữa dọc */
-  height: 200px;
-  border: 1px solid black;
-}
-
-.item {
-  background: lightblue;
-  padding: 20px;
-  margin: 10px;
-}
+    }
+  

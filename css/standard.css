@@ -12,7 +12,7 @@ a:hover{ /* set sẵn màu hover. link */
     color: #ad7408; /* đổi màu chữ khi hover chuột vào */
 }
 
-header{
+/* header{
 /* Hình nền */
 /*    background-image: url('/images/Tea/Anh\ nen\ tra\ ngang.PNG'); /* thay bằng link ảnh của bạn ,nếu muốn lồng 2 ảnh thì cách nhau bằng dấu "," link nào ở trên sẽ là ảnh nằm trên; 
     linear-gradient: làm mờ màu nền, theo dải màu chọn */
@@ -24,7 +24,7 @@ header{
  /*   height: 620px;
  /*   font-weight: 100;
  /*   float:left;
-}
+} */
 
 body{
     font-family: "Roboto", sans-serif;
