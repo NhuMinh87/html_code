@@ -76,7 +76,6 @@ img{
     font-family: 'Montserrat';
     font-size: 12px;
     font-weight: 300;
-   
 }   
 
 .nav ul{
@@ -100,6 +99,7 @@ img{
   font-size: 35px;
   letter-spacing: 6px;
   font-weight: 350;
+  margin-left: -120px;
 }
 
 button{
