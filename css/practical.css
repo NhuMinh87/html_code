@@ -110,55 +110,95 @@ button{
     background-color: #E9F0E9;
 }
 
-.Featured{
-    padding: 0px 0px 30px 0px;
-}
-
 .list {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 3fr; /* cột trái 1 phần, cột phải 3 phần */
     gap: 20px;                      /* khoảng cách giữa 2 cột */
     padding: 30px 0px 50px 0px;
 }
-.list-left img, .list-right img {
-    max-width: 100%;
-    height: auto;   /* để ảnh tự co giãn giữ tỉ lệ */
-    display: block; /* tránh khoảng trống dưới ảnh */
-}
 
-.list ul li{
-    list-style: none;
-}
-
-.left-over{
-    padding: 0px 0px 40px 0px;
-}
-
-.right-over{
-    display:flex;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-}
-.over-01, .over-02{
+.list-left{
     flex:1;
 }
-
-.over-02 select{
-    font-family: "Cormorant Garamond", sans-serif;
-    width: 350px;        /* rộng bằng container */
-    height: 50px;       /* cao giống input */
-    margin: 5px;
-    font-size: 20px;    /* chữ to hơn */
-    padding: 10px;    /* khoảng cách trong ô */
-    border: 1px solid #ccc;
-    border-radius: 4px;  
-    text-align: center
+.list-right{
+    flex:1.5;
 }
 
+.image{
+    display: flex;
+      padding: 30px 0px 50px 0px;
+}
+
+.image-left{
+    flex:0.8;
+}
+
+.imge-right{
+    flex:1.5;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* cột trái 1 phần, cột phải 3 phần */
+    grid-template-rows: 1fr;
+    gap: 20px;                      /* khoảng cách giữa 2 cột */
+  
+}
 .film{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+label{
+    font-size: 22px;
+    float:left;
+    text-align: justify;
+}
+
+.description{
+    display: grid;
+    gap: 10px; /* khoảng cách giữa 2 bên */
+    grid-template-columns: 1.2fr 1fr;
+    background: #E9F0E9;
+    padding: 15px 0px 0px 30px;
+}
+
+.description-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cắt cho vừa */
+    border-radius: 15px;
+}
+
+.information{
+    background: #E9F0E9;
+    padding: 0px 0px 0px 45px;
+}
+
+.information-02{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:0px;
+}
+
+.ingredient{ 
+    background: #E9F0E9;
+    padding: 0px 0px 0px 45px;
+}
+
+.ingredient ul{
+    padding-left: 80px;
+}
+
+.shipping{
+    background: #E9F0E9;
+    padding: 0px 0px 50px 45px;
+}
+
+.related{
+    padding: 0px 0px 100px 45px;
+}
+
+.reviews{
+    text-align: center;
 }
 
 .footer{
@@ -168,8 +208,8 @@ button{
     background-color:none ;
     color: #444444;
     font-size: 22px;
-    height: 200px;
-    line-height: 1.0;
+    height: 400px;
+    line-height: 2.0;
     text-align: center;
 }
 
@@ -190,5 +230,4 @@ button{
     text-align: center;
     border-left: 0.5px solid #444444;
     border-right: 0.5px solid #444444;
-    
 } 
