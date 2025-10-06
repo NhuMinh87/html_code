@@ -26,3 +26,33 @@ label{
     float:left;
     text-align: justify;
 }
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background: #fff;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.search-box button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+}
+
+.search-box button:hover {
+    color: #000;
+}

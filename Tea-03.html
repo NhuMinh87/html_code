@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaai - Organic Tea Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="css/Tea-03.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body>
+  <body>
      <header class="section header">
         <nav class="section nav">
             <ul>
@@ -29,10 +30,153 @@
 
             <ul>
                 <li><a href="#"><i class="bi bi-bag"></i></a></li>
-                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Reservation <i class="bi bi-arrow-right"></i></a></li>
             </ul>
         </nav>
     </header>
+
+    <main class="section main">
+        <section class="section slider">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">  
+          <div class="carousel-inner">
+             <div class="carousel-item active">
+                <img src="images/Tea-03/slider-01.png" class="d-block w-100" alt="...">
+             </div>
+
+             <div class="carousel-item">
+                <img src="images/Tea-03/slider-02.png" class="d-block w-100" alt="...">
+             </div>
+
+             <div class="carousel-item">
+                <img src="images/Tea-03/slider-03.png" class="d-block w-100" alt="...">
+             </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="section health">
+          <div class="container">
+            <div class="health">
+              <div class="health-01">
+                <img src="images/Tea-03/health.png">
+              </div>
+
+              <div class="health-02">
+                <h2>Health Benefits of Drinking Tea Regularly</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam mollitia suscipit vitae eveniet excepturi ipsa perspiciatis. Eius, rerum? Qui ea illo beatae ipsum, neque voluptatum aspernatur! Qui amet quo veritatis voluptatum praesentium porro dolorum pariatur! Fugit reprehenderit minus debitis aspernatur qui necessitatibus inventore molestiae assumenda blanditiis quae accusamus aut recusandae, cum incidunt nisi voluptatibus laudantium alias est in, numquam architecto.</p>
+                <button>VIEW MORE</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section unique">
+          <div class="container"> 
+            <h2>Our Unique Tea Blends</h2>
+              <img src="images/Tea-03/unique.png">
+          </div>
+        </section>
+
+        <section class="section offers">
+          <div class="container">
+            <div class="offers">
+              <div class="offers-01">
+                <h2>Popular Offers</h2>
+                <p>Oolong Tea             $19.85</p>
+                <p>Theme nullam quis ante velit</p>
+                <p>Matcha                 $19.00</p>
+                <p>Theme nullam quis ante velit</p>
+                <p>Rooibos Tea            $39.39</p>
+                <p>Theme nullam quis ante velit</p>
+                <p>Chamomile Tea          $42.09</p>
+                <p>Theme nullam quis ante velit</p>
+              </div>
+
+              <div class="offers-02">
+                <img src="images/Tea-03/offer.png">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section magic">
+          <div class="container">
+            <h2>Discover The Magic Of Tea,</h2>
+            <h2>Learn About Our Signature Flavors</h2>           
+          </div>
+        </section>
+
+        <section class="section discover">
+          <div class="container">
+            <div class="discover">
+              <div class="discover-01">
+                <img src="images/Tea-03/discover.png">
+              </div>
+
+              <div class="discover-02">
+                <h3>100% Organic</h3>
+                <p>Et malesuada fames ac turpis egestas maecenas</p>
+                <p>pharetra convallis met nisl purus.</p>
+                <h3>High Quality</h3>
+                <p>Et malesuada fames ac turpis egestas maecenas</p>
+                <p>pharetra convallis met nisl purus.</p>
+                <h3>Always Fresh</h3>
+                <p>Et malesuada fames ac turpis egestas maecenas</p>
+                <p>pharetra convallis met nisl purus.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section blog">
+          <div class="container">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="images/Tea-03/blog-01.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/Tea-03/blog-02.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Tea-03/blog-03.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section hover">
+          <div class="container">
+            <div class="hover">
+              <div class="hover-left">
+                <img src="images/Tea-03/hover-01.png">
+                <figcaption>THE ART OF TEA</figcaption>
+              </div>
+
+              <div class="hover-right">
+                <img src="images/Tea-03/hover-02.png">
+                <figcaption>TEA TEA CUP OF LIFE</figcaption>
+            </div>
+          </div>
+        </section>
+
+        <section class="section instagram">
+          <div class="container">
+            <p><i>Follow Us On Instagram</i></p>
+          </div>
+          <img src="images/Tea-03/insta.png">
+        </section>
+
+    </main>
 
     <footer class="section footer">
         <div class="footer-00">
@@ -67,6 +211,9 @@
            <p>© 2021 Qode Interactive, All Rights Reserved</p>
         </div>
     </footer>
-        
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+

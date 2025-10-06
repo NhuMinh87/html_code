@@ -32,7 +32,7 @@ body{
     font-weight: 100; /* độ đậm của chữ */
     color: #444444; /* màu chữ */
     text-align:left; /* canh trái, phải, giữa */
-    padding: 20px; /* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
+    padding: 0px 20px;/* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
     line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px, tự thêm so với hướng dẫn của thầy*/
 }
 
@@ -64,6 +64,7 @@ img{
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.1px solid #444444;
+    height:80px;
 }   
 
 .nav ul{

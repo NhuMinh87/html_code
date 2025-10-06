@@ -16,13 +16,15 @@ div{
     background-color: #abdfc7; /* màu nền */
 }
 
-div:hover{ /*hiệu ứng khi hover chuột vào thẻ, giúp người dùng dễ nhận diện phần tử khi sử dụng */
-    background-color: #86b19d; /*thay đổi màu nền khi hover*/
-    /* transform: scale(1.5); /*phóng to thẻ khi hover lên 10%*/
-    transform: translate(0,-10px); /*dịch chuyển thẻ khi hover hướng lên trên 10px*/
-    /* transform: rotate(10deg); /*xoay thẻ khi hover góc 5 độ*/
-    transition: all 0.5s ease-in; /*hiệu ứng chuyển đổi mượt mà trong 3s*/
+
+div:hover{ /* hiệu ứng khi hover chuột vào thẻ - giúp người dùng dễ nhận diện phần tử khi sử dụng */
+    background-color: #86b19d; /* màu nền khi hover chuột vào thẻ */
+     /* transform: translate(0, -5px); /* di chuyển thẻ lên trên 5px */
+    /*  transform: scale(1.05); /* phóng to thẻ lên 5% */
+    transform: rotate(45deg); /* xoay thẻ 45 độ */
+    transition: all 0.3s ease; /* hiệu ứng chuyển đổi mượt mà trong 0.3s */
 }
+
 
 img{
    max-width:100%; /* cỡ hình ảnh về kích thước của thẻ cha nếu nó vượt quá*/

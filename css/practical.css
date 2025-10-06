@@ -64,6 +64,8 @@ img{
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.1px solid #444444;
+    height: 10px;
+    padding: 0px 0px 100px 0px;
 }   
 
 .nav ul{
@@ -207,7 +209,7 @@ label{
     gap:0;
     background-color:none ;
     color: #444444;
-    font-size: 22px;
+    font-size: 18px;
     height: 400px;
     line-height: 2.0;
     text-align: center;
