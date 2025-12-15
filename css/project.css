@@ -401,3 +401,111 @@ button{
     border-radius: 3px 3px 0 0;
     box-shadow: 0 2px 0 #2dbad4;
 }
+
+/* ============================
+   MOBILE (max-width: 575px)
+============================ */
+@media (max-width: 575px) {
+
+    /* Container co lại */
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Headings nhỏ lại */
+    h1 { font-size: 48px; }
+    h2 { font-size: 28px; }
+    h4 { font-size: 20px; }
+
+    /* Discover grid: 4 ảnh → 2 cột */
+    .discover-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    /* Hover section thành 1 cột */
+    .hover {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hover-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Latest blog: 3 card → 1 column */
+    .latest-inner {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .latest-01, .latest-02, .latest-03 {
+        width: 100%;
+    }
+
+    /* Navbar chỉnh nhỏ */
+    .navbar-logo-text { font-size: 20px; }
+    .navbar-logo-sub {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    /* Button nhỏ lại */
+    button {
+        width: 130px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+/* ============================
+   TABLET (576px – 991px)
+============================ */
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .container {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    /* Discover section: 4 ảnh → 3 ảnh/row */
+    .discover-inner {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    /* Hover section xếp lại 1 cột */
+    .hover {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /* Latest blog: 2 card trên, 1 card dưới */
+    .latest-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .latest-03 {
+        grid-column: span 2;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    h1 { font-size: 90px; }
+    h2 { font-size: 40px; }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 1360px;
+    }
+
+    .discover-inner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
