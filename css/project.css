@@ -509,3 +509,62 @@ button{
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* Ticker Wrapper */
+.ticker-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: #fafafa;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 30px 0;
+}
+
+/* Ticker container */
+.ticker {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Track chạy chữ */
+.ticker-track {
+    display: inline-flex;
+    gap: 80px; /* khoảng cách giữa các chữ */
+    animation: tickerMove 25s linear infinite;
+}
+
+/* Kiểu chữ đúng chuẩn */
+.ticker-track span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: #8d8d8d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Animation */
+@keyframes tickerMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ticker-track span {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ticker-track span {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+}
+
