@@ -190,7 +190,6 @@ img{
 }
 
 .paragraph-02{
-    flex: 1;
     display: grid; /* dùng grid để căn đều */      
     grid-template-columns: 1fr 1fr; /* 2 cột */
     gap: 10px;
@@ -230,7 +229,6 @@ img{
 }
 
 .S04{
-    flex: 1;
     display: grid; /* dùng grid để căn đều */           
     grid-template-columns: 1fr 1fr; /* 2 cột */
     gap: 30px;
@@ -241,7 +239,6 @@ img{
 }
 
 .quality{
-    flex:1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:0px;
@@ -257,7 +254,6 @@ img{
 }
 
 .lover-02{
-    flex:1;
     display:grid;
     grid-template-rows: 2fr;
     gap:15px;
@@ -287,6 +283,7 @@ img{
 .footer-04{
     font-size: 18px;
     text-align: center;
+    height: 80px;
 }
 
 .footer-02{

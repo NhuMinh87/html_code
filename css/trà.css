@@ -32,7 +32,7 @@ body{
     font-weight: 300; /* độ đậm của chữ */
     color: #444444; /* màu chữ */
     text-align:left; /* canh trái, phải, giữa */
-    padding: 0px 20px;/* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
+    padding: 0px;/* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
     line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px, tự thêm so với hướng dẫn của thầy*/
 }
 
@@ -352,6 +352,17 @@ div:hover{ /*hiệu ứng khi hover chuột vào thẻ, giúp người dùng d�
     padding: 0px;
     font-size: 14px;
     text-align:center;
+}
+
+.D103 button{
+    color: #fafafa;
+    width: 130px;
+    height: 60px;
+    font-size: 10px;
+    margin: 50px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
+    border: 2px solid white;
+    background-color: transparent;
 }
 
 .D104{

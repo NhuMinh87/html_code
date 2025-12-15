@@ -1,0 +1,403 @@
+*{ /* set chung style cho tất cả các phần tử */
+    box-sizing: border-box; /* bao gồm cả padding và border vào trong chiều rộng và chiều cao của thẻ */
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none; /* bỏ gạch chân của thẻ a */
+    color: #444444;
+}
+
+h1{
+    font-size: 100px;
+    font-weight: 100; /* độ đậm của chữ */
+}
+
+h2{
+    font-size: 55px;
+    font-weight: 100; /* độ đậm của chữ */
+}
+
+h3{
+    font-size: 45px;
+    font-weight: 10; /* độ đậm của chữ */
+}
+
+h4{
+    font-size: 35px;
+    font-weight: 10; /* độ đậm của chữ */
+}
+
+h5{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-logo {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body{
+    font-family: "Lato", sans-serif;
+    background-color: #fafafa; /* màu nền của trang web */
+    font-size: 20px; /* kích thước chữ */
+    font-weight: 100; /* độ đậm của chữ */
+    color: #444444; /* màu chữ */
+    text-align:left; /* canh trái, phải, giữa */
+    padding: 0px;/* khoảng cách giữa viền và nội dung của thẻ body, đều tự thêm so với hướng dẫn của thầy vì thấy đẹp hơn*/
+    line-height: 1.5; /* khoảng cách giữa các dòng  1.5 * 15px = 22.5px, tự thêm so với hướng dẫn của thầy*/
+}
+
+p{
+    margin-bottom: 0.75rem; /* khoảng cách giữa các đoạn văn */
+}
+
+/* layout */
+/* style cho section */
+.section{
+    float: none; /* cho phép các thẻ div đứng cạnh nhau: right */ 
+    width: 100%; /* chiều rộng của thẻ section */
+}
+
+.container{ /*tạo 1 hộp nội dung giữa các section */
+    float: none;
+    margin: 0 auto;
+    width: 1360px; /* chiều rộng của thẻ container */
+}
+
+img{
+    max-width: 100%; /* cỡ hình ảnh về kích thước của thẻ cha nếu nó vượt quá*/
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+}
+/* đẩy nội dung xuống để không bị che */
+.main {
+    padding-top: 140px; /* chỉnh tùy theo chiều cao navbar */
+}
+
+
+.slider img {
+    width: 100%;
+    height: 100vh; /* chiều cao chiếm cả màn hình */
+    object-fit: cover;
+}
+
+
+/* ví dụ điều chỉnh các phần */
+.nav{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 30px;
+  
+}   
+
+.nav ul{
+    display: flex;  /* dàn hàng ngang giống float left, giống inline; ko đặt flex direction thi mặc định là row, xếp hàng ngang  */
+    margin-left: 50px ;
+    margin-right: 50px;
+}
+
+.nav ul li{ /* viết theo gia pha */
+    list-style: none; /* bỏ dấu chấm đầu dòng của thẻ ul */
+    margin-right: 70px; /* khoảng cách giữa các thẻ li */
+    padding-top: 25px;
+    padding-bottom: 15px;
+}   
+
+.nav li a{
+    color: white;
+}
+
+.first{
+    text-align: left;
+    padding: 20px 0px 20px 90px;
+}
+.nurse-inner{
+    display: flex;
+    justify-content: center; /* căn giữa cả nhóm */
+    gap: 20px; /* khoảng cách giữa các icon, chỉnh nhỏ/ lớn tuỳ ý */
+    padding: 20px 0px 20px 0px;
+    border-top: 0.1px solid grey;
+}
+.nurse-01{
+    flex:1;
+}
+
+.nurse-02{
+    flex:1;
+}
+
+.unique{
+    padding: 0px 0px 50px 0px;
+}
+
+.senior{
+    text-align: center;
+    padding: 0px 0px 50px 0px;
+}
+
+.magic{
+    text-align: center;
+    padding: 0px 0px 80px 0px;
+}
+
+
+.discover-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px 0px 100px 0px;
+}
+
+.discover-inner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.hover{
+    display:flex;
+    gap: 100px;
+    padding: 30px 0px 50px 0px;
+    font-size: 14px;
+}
+
+.hover-left{
+    flex:1.1;
+}
+
+.hover-right{
+    flex:1.8;
+}    
+
+.hover-left img, .hover-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cắt cho vừa */
+}
+
+.latest{
+    text-align: center;
+    padding: 0px 80px 50px 80px;
+}
+
+
+.latest-inner {
+    display: flex;
+    justify-content: space-between;  /* dàn đều 3 hình */
+    gap: 30px;                       /* khoảng cách giữa các item */
+    margin-top: 40px;
+}
+
+.latest-01, .latest-02, .latest-03 {
+    flex: 1;                         /* mỗi item chiếm đều nhau */
+}
+
+.latest-01 img, 
+.latest-02 img, 
+.latest-03 img {
+    width: 100%;                     /* hình full khung */
+    height: auto;
+    border-radius: 5px;              /* bo nhẹ cho đẹp */
+    display: block;
+}
+
+.latest h5 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #6b705c;
+    text-transform: uppercase;
+}
+
+.latest h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.latest p {
+    font-size: 16px;
+    color: #777;
+}
+
+.latest-01 img:hover, 
+.latest-02 img:hover, 
+.latest-03 img:hover {
+    transform: scale(1.05);
+    transition: all 1.0s ease; 
+}
+
+
+
+button{
+    font-family: "Cormorant Garamond", sans-serif;
+    color: whitesmoke;
+    width: 170px;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px 30px;
+    border: 1px solid #E9F0E9;
+    background-color: #2dbad4;
+}
+
+/* Footer background + text color */
+.footer-section {
+    background: #222;
+    color: #fff;
+}
+
+/* Footer headings */
+.footer-section h6 {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Remove default UL padding */
+.footer-section ul {
+    padding-left: 0;
+}
+
+/* List items spacing */
+.footer-section li {
+    margin-bottom: 0.5em;
+    list-style: none;
+}
+
+/* Default text + link color */
+.footer-section li,
+.footer-section a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Hover effect for links */
+.footer-section a:hover {
+    color: #0d6efd;
+}
+
+/* Light muted text */
+.footer-section .text-muted {
+    color: #aaa !important;
+}
+
+/* Smaller text styling */
+.footer-section .small {
+    font-size: 0.95em;
+}
+
+/* Special Login / Register buttons */
+.nav-link-special {
+    border: 2px solid #2dbad4 !important;
+    background: #e6f7fb !important;
+    color: #2dbad4 !important;
+    border-radius: 6px !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0.1rem !important;
+    font-weight: 700;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.nav-link-special:hover,
+.nav-link-special:focus,
+.nav-link-special.active {
+    background: #2dbad4 !important;
+    color: #fff !important;
+    border-color: #2dbad4 !important;
+}
+
+
+/* Navbar main body */
+.custom-navbar {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+/* underline bar */
+.navbar-underline {
+    width: 100vw;
+    height: 5px;
+    background: #2dbad4;
+    margin-bottom: 0.5rem;
+}
+
+/* Logo styling */
+.navbar-logo {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.navbar-logo-plus {
+    font-size: 2.2rem;
+    color: #888;
+    margin-right: 8px;
+    font-weight: 400;
+}
+
+.navbar-logo-text {
+    color: #222;
+}
+
+.navbar-logo-dash {
+    color: #888;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 4px;
+}
+
+.navbar-logo-sub {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+/* Nav link styles (middle menu) */
+.nav-center .nav-link-custom {
+    font-weight: 700;
+    color: #222 !important;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 0.7rem 1.2rem;
+    margin: 0 0.1rem;
+    background: none !important;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    transition: color 0.2s, background 0.2s;
+}
+
+/* Hover + Active effect */
+.nav-center .nav-link-custom.active,
+.nav-center .nav-link-custom:hover,
+.nav-center .nav-link-custom:focus {
+    background: #2dbad4 !important;
+    color: #fff !important;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 0 #2dbad4;
+}
